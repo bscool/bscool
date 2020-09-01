@@ -17,6 +17,7 @@ toggleCollapse = () => {
 
 render() {
   return (
+    <div style = {{position:""}}>
       <MDBNavbar color="white" light expand="md">
         <MDBNavbarBrand>
           <strong >BScool</strong>
@@ -57,6 +58,7 @@ render() {
             </MDBNavItem>
         </MDBCollapse>
       </MDBNavbar>
+      </div>
     );
   }
 }

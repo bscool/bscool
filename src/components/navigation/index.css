@@ -4,4 +4,12 @@
     font-weight: 400;
     font-family: 'Alata', sans-serif;
     float: right;
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    position: fixed;
 }
