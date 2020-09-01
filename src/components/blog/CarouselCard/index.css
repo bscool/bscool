@@ -1,0 +1,12 @@
+.card{
+    border: solid white 2px;
+    border-radius: 10px;
+}
+.card-meta{
+    font-size: small;
+    font-style: italic;
+}
+.title{
+    font-size: medium;
+    font-weight: 700;
+}

@@ -1,0 +1,15 @@
+.bg-bscool{
+    background-color: rgb(255, 255, 110);
+}
+.round{
+    border: solid black 2px;
+    border-radius: 10px;
+}
+button{
+    padding-top: 0;
+}
+
+input{
+    width:100%;
+    max-width: 300px;
+}
