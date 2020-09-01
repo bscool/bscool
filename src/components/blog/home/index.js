@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, withRouter, Link} from 'react-router-dom';
-import {posts} from "../../../data/posts"
+import data from "../../../data/posts.json"
 
 
 class blogHomePage extends Component{
@@ -11,10 +11,10 @@ class blogHomePage extends Component{
             <>
             <h1>Blog Home Page</h1>
             <div>
-                {posts.map(post => (
+                {data.map(post => (
                     <div>
                         <h4>{post.title}</h4>
-                <Link to = {`/${post.slug}`}>{post.content}</Link>
+                <Link to = {`/blog${`/${post.slug}`}`}>{post.content}</Link>
                     </div>
                 ))}
             </div>
