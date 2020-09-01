@@ -1,0 +1,16 @@
+ 
+    [
+    {
+        "id" : 1,
+        "title" : "first article",
+        "content" : "first article content",
+        "slug": "article-1"
+    },
+    {
+        "id":2,
+        "title": "second article",
+        "content": "second article content",
+        "slug": "article-2"
+    }
+]
+ 
