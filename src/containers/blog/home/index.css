@@ -1,0 +1,30 @@
+.welcome{
+    text-align: center;
+}
+
+.title-img{
+    box-sizing: border-box;
+    object-fit: cover;
+    width:100%;   
+}
+
+.related-date{
+    font-size: smaller;
+    margin-top: -15px;
+    margin-left: -15px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+.card{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+    border-radius: 5px;
+}
+
+.card:hover{
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.5);
+}
+
+a.card:hover{
+    color: rgba(0,0,0,0.26);
+}

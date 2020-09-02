@@ -4,9 +4,9 @@ import { useParams } from "react-router-dom";
 
 import postsData from "../../../data/posts.json";
 import relatedPostsData from "../../../data/relatedPosts.json";
-import NewsLetter from "../../Newsletter";
-import RelatedItemsCard from "../RelatedItemsCard";
-import CarouselCard from "../CarouselCard";
+import NewsLetter from "../../../components/Newsletter";
+import RelatedItemsCard from "../../../components/RelatedItemsCard";
+import CarouselCard from "../../../components/CarouselCard";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./index.css";

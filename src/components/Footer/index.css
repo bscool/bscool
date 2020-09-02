@@ -1,0 +1,14 @@
+.footer-item {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ul{
+    list-style-type: none;
+}
+
+.social-media{
+    float: right;
+}
