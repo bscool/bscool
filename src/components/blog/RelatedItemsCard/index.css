@@ -1,0 +1,27 @@
+
+.related-img{
+    box-sizing: border-box;
+    object-fit: cover;
+    width:100%;
+    height: 17vh;
+    max-height: 120px;
+    max-width: 238px;
+}
+.related-heading{
+    font-size: medium;
+    font-weight: 700;
+    
+}
+.related-desc{
+    font-size: small;
+}
+a{
+    color:grey;
+}
+a:hover{
+    color:blue;
+}
+.blog-post-meta{
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,30 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-.post-title{
-    font-weight: 250;
-    font-family: 'Poppins', sans-serif;
+*{
+    text-decoration: none;
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: large;
+}
+.bg-bscool{
+    
+}
+.round{
+    border: solid black 2px;
+    border-radius: 10px;
+}
+button{
+    padding-top: 0;
+}
+button:focus{
+    background: rgb(255, 255, 78);
+}
+input{
+    width:100%;
 }
 
-@media (min-width: 1200px){
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    margin-top: 100px;
-    max-width: 1000px;
-    margin-left: 10%;
-    margin-right: 5%;}
+.carousel-slider{
+    background-color: white;
 }
 
-@media (min-width: 992px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 800px;
-        margin-left: 8%;
-        margin-right: 4%;
-        margin-top: 100px;
+.all-posts{
+    text-align:center;
 }
-    }
-
-.post-content{
-    font-size: 20px;
-    font-weight: 180;
-    font-family: 'Poppins', sans-serif;
-    padding-left: 2%;
-    margin-top: 70px;
+.all-posts-btn{
+    border: solid black 2px;
+    border-radius:25px;
+    font-weight: bold;
 }
