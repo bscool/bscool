@@ -5,7 +5,7 @@
     font-size: large;
 }
 .bg-bscool{
-    
+    background-color: rgb(255, 255, 52);
 }
 .round{
     border: solid black 2px;
@@ -23,6 +23,7 @@ input{
 
 .carousel-slider{
     background-color: white;
+    overflow: visible;
 }
 
 .all-posts{
@@ -33,3 +34,5 @@ input{
     border-radius:25px;
     font-weight: bold;
 }
+
+

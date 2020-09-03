@@ -4,7 +4,7 @@ import './index.css';
 const CarouselCard = ()=>{
     return(
         <>
-        <div className="card mx-2 my-2" style={{width: "100%"}}>
+        <div className="card mx-1 my-2" style={{width: "100%"}}>
             <img className="card-img-top" src="https://source.unsplash.com/user/erondu/1600x900" alt="Card image cap"/>
             <div className="card-body">
               <div className="card-meta">September 01, 2020</div>

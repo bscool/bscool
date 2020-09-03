@@ -21,12 +21,23 @@ const Newsletter = (props) => {
     })
     
   }; 
+
+  let cssObject = {};
+  if(props.height!==undefined)
+    {
+      cssObject["height"] = `${props.height}`;
+    }
+
   return (
     <>
-      <div className={`p-4 mb-3 round bg-bscool ${props.display}`}>
-        <form className="newsletter" onSubmit={onSubmits}>
-          <div className="text-center">
-          <div className="text-center">{props.msg}</div>
+      <div className={`p-4 mb-3 round bg-bscool col-12 newsletter-div ${props.display}`} style={cssObject}>
+        <div className="row">
+          <div className="col-12">
+          <div className="text-center mt-1">{props.msg}</div>
+        <form className="newsletter mt-5" onSubmit={onSubmits}>
+        
+          <div className="text-center my-auto">
+          
             <input
               type="email"
               className="rounded mx-auto mt-1"
@@ -50,6 +61,9 @@ const Newsletter = (props) => {
             </div>
           </div>
         </form>
+          </div>
+        </div>
+      
       </div>
     </>
   );
