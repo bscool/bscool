@@ -2,14 +2,15 @@ import React from "react";
 import {Link} from 'react-router-dom';
 
 import { Carousel } from 'react-responsive-carousel';
-import {MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from 'mdbreact'
+import {MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from 'mdbreact';
 
-import data from "../../../data/posts.json"
+import data from "../../../data/posts.json";
+import carouselData from "../../../data/carouselData.json";
 import "./index.css"
 
 import NewsLetter from "../../../components/Newsletter";
 import RelatedItemsCard from "../../../components/RelatedItemsCard";
-import CarouselCard from "../../../components/CarouselCard";
+import CarouselModified from "../../../components/CarouselModified";
 
 
 
@@ -141,41 +142,8 @@ function blogHomePage(){
                         </MDBDropdownMenu>
                     </MDBDropdown>
                 </div>
-                <Carousel>
-                    <div className="carousel-slider d-none d-md-block">
-                        <div className="row">
-                        <div className="col-4 "><CarouselCard/></div>
-                        <div className="col-4 "><CarouselCard/></div>
-                        <div className="col-4"><CarouselCard/></div>
-                        </div>
-                    </div>
-
-
-                        <div className="carousel-slider d-none d-md-block">
-                            <div className="row">
-                            <div className="col-4 "><CarouselCard/></div>
-                            <div className="col-4 "><CarouselCard/></div>
-                            <div className="col-4"><CarouselCard/></div>
-                            </div>
-                        </div>
-
-
-                        <div className="carousel-slider d-none d-md-block">
-                            <div className="row">
-                            <div className="col-4 "><CarouselCard/></div>
-                            <div className="col-4 "><CarouselCard/></div>
-                            <div className="col-4"><CarouselCard/></div>
-                            </div>
-                        </div>
-                            
-                            
-                </Carousel>
-
-                <div className="all-posts">
-                    <a href = "/explore">
-                        <button type="button" className="btn all-posts-btn bg-bscool py-2 mt-0 mb-3" >Browse All Posts</button>
-                        </a>
-                </div>
+                
+                <CarouselModified data={carouselData}/> 
                 <NewsLetter msg="Get the latest product updates, company news and special offers delivered right to your inbox" />
 
             </div>
