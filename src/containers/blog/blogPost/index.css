@@ -29,7 +29,7 @@ input{
     text-align:center;
 }
 .all-posts-btn{
-    border: solid black 2px;
+    border: solid rgba(0,0,0,0.3) 1px;
     border-radius:25px;
-    font-weight: bold;
+    font-weight: 400;
 }

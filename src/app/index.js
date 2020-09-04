@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import blogHomePage from "../containers/blog/home"
 import homePage from "../containers/home"
 import BlogPost from "../containers/blog/blogPost"
+import explore from '../containers/blog/explore'
 //import './index.css'
 
 function App(){
@@ -15,7 +16,9 @@ function App(){
             <switch>
             <Route path = "/blog" exact component = {blogHomePage} />
             <Route path = "/" exact component = {homePage} />
+            <Route path = "/explore" exact component = {explore} />
             <Route path = "/blog/:slug" component = {BlogPost}/>
+
             </switch>
             <Footer />
         </div>

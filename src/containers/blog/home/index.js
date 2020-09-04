@@ -32,6 +32,9 @@ const BigCard = (props)=>{
         </>
     );
 };
+
+
+
 function blogHomePage(){
      return(
             <>
@@ -84,13 +87,10 @@ function blogHomePage(){
                     />
                     )
                     })}
-                <br/>
-                <br/>
-                <h1>Most Popular</h1>
-                <br/>
+                <div id = "hiddenCards" style = {{display:"none"}}>hidden cards
                 {data.slice(6,9).map((post) => {
                     return (
-                    <RelatedItemsCard
+                    <RelatedItemsCard 
                         imgsrc={post.imgsrc}
                         content={post.content}
                         title={post.title}
@@ -99,6 +99,35 @@ function blogHomePage(){
                     />
                     )
                     })}
+                </div>
+                
+                <div className="all-posts">
+                    <a href = "javascript:void(0)" id = "loadMoreLink">
+                        <button type="button" id  = "loadMoreButton" className="btn all-posts-btn bg-bscool py-2 mt-0 mb-3" onClick = {LoadMore}>Load More</button>
+                    </a>
+                </div>
+                
+                <h1>Most Popular</h1>
+                <br/>
+                
+                {data.slice(6,9).map((post) => {
+                    return (
+                        <>
+                    <RelatedItemsCard 
+                        imgsrc={post.imgsrc}
+                        content={post.content}
+                        title={post.title}
+                        link={`/blog${`/${post.slug}`}`}
+                        slug={post.slug}
+                    />
+                    </>
+                    )
+                    })}
+                
+
+                <br/>
+                <br/>
+
                 <div>
                    <MDBDropdown>
                         <MDBDropdownToggle tag = "p" >
@@ -141,6 +170,12 @@ function blogHomePage(){
                             
                             
                 </Carousel>
+
+                <div className="all-posts">
+                    <a href = "/explore">
+                        <button type="button" className="btn all-posts-btn bg-bscool py-2 mt-0 mb-3" >Browse All Posts</button>
+                        </a>
+                </div>
                 <NewsLetter msg="Get the latest product updates, company news and special offers delivered right to your inbox" />
 
             </div>
@@ -148,6 +183,21 @@ function blogHomePage(){
         );
 
     
+}
+
+//document.getElementById("hiddenCards").style.display = "none"
+function LoadMore(){
+    let hiddenCards = document.getElementById("hiddenCards")
+    let loadMoreButton = document.getElementById("loadMoreButton")
+    let loadMoreLink = document.getElementById("loadMoreLink")
+
+    if(hiddenCards.style.display === "none"){
+        hiddenCards.style.display = "inline"
+        loadMoreButton.innerHTML = "Browse All Posts"
+    }
+    else{
+        loadMoreLink.href = "/explore"
+    }
 }
 
 export default blogHomePage

@@ -113,9 +113,11 @@ function BlogPost() {
                
 </Carousel>
 
-<div className="all-posts">
-  <button type="button" className="btn all-posts-btn bg-bscool py-2 mt-0 mb-3" >Browse All Post</button>
-</div>
+          <div className="all-posts">
+          <a href = "/explore">
+            <button type="button" className="btn all-posts-btn bg-bscool py-2 mt-0 mb-3" >Browse All Posts</button>
+            </a>
+          </div>
 
 
 
